@@ -1,0 +1,43 @@
+@import "navbar.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  --myred: rgb(255, 83, 83);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loaderScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+.loadSquare {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: rotateZ(45deg);
+}
+.lineUL {
+  position: absolute;
+  background-color: blue;
+  width: 10px;
+  height: 100px;
+  transform: translateX(-10px);
+}
+.lineDL {
+  position: absolute;
+  background-color: blue;
+  width: 10px;
+  height: 100px;
+  transform: translateX(-10px);
+}
