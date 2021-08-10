@@ -14,7 +14,13 @@
   padding: 15px;
 
   color: var(--myred);
+  transition: background-color 0.4s ease-in-out;
 }
+
+.introduction button:hover {
+  background-color: rgb(193, 170, 170);
+}
+
 .introduction > div:nth-child(2),
 .introduction > div:nth-child(3) {
   font-size: 4rem;
