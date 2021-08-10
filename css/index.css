@@ -15,29 +15,116 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: grey;
 }
 
 .loadSquare {
   position: relative;
-  top: 50%;
-  left: 50%;
+
   width: 100px;
   height: 100px;
-  background-color: red;
   transform: rotateZ(45deg);
 }
+
+.lineDR {
+  width: 100px;
+  height: 0px;
+  position: absolute;
+  border-left: 3px solid red;
+  transform: translate(100px, 0px);
+  bottom: 0px;
+  animation: lineDRanim 1s ease-in-out;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
 .lineUL {
   position: absolute;
-  background-color: blue;
-  width: 10px;
-  height: 100px;
-  transform: translateX(-10px);
+  border-right: 3px solid red;
+
+  width: 100px;
+  height: 0px;
+
+  transform: translate(-100px, 0px);
+  animation: lineULanim 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.lineUL h1 {
+  transform: translate(100px, 0px) rotateZ(-45deg);
+  color: #fff;
+  font-size: 3rem;
+  opacity: 0;
+  animation: letterAppear 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
 }
 .lineDL {
-  position: absolute;
-  background-color: blue;
-  width: 10px;
+  width: 0px;
   height: 100px;
-  transform: translateX(-10px);
+  position: absolute;
+  border-top: 3px solid red;
+  transform: translate(0px, 100px);
+  animation: lineDLanim 1s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.lineUR {
+  width: 0px;
+  height: 100px;
+  position: absolute;
+  border-bottom: 3px solid red;
+
+  transform: translate(0px, -100px);
+  animation: lineURanim 1s ease-in-out;
+  animation-delay: 3s;
+
+  right: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lineULanim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
+}
+@keyframes lineDLanim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 103px;
+  }
+}
+
+@keyframes lineDRanim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+@keyframes lineURanim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes letterAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
