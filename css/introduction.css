@@ -5,13 +5,22 @@
 }
 .introduction h3 {
   color: var(--myred);
+  animation: ShowUp 0.8s ease-in-out;
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
+
 .introduction button {
   width: 15%;
   border: 2px solid var(--myred);
   background-color: transparent;
   border-radius: 5px;
   padding: 15px;
+  animation: ShowUp 0.8s ease-in-out;
+  animation-delay: 1.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 
   color: var(--myred);
   transition: background-color 0.4s ease-in-out;
@@ -26,14 +35,38 @@
   font-size: 4rem;
   font-weight: bold;
   color: #fff;
+  opacity: 0;
   font-family: "Atkinson Hyperlegible", sans-serif;
 }
+.introduction > div:nth-child(2) {
+  animation: ShowUp 0.8s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
 .introduction > div:nth-child(3) {
-  color: rgb(191, 179, 179);
+  animation: ShowUp 1.2s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  color: #fff;
+  opacity: 0;
 }
 .introduction p {
-  color: rgb(191, 179, 179);
+  animation: ShowUp 0.8s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  color: #fff;
+  opacity: 0;
 }
-.introduction > * {
+.introduction > *:not(div:nth-child(2)) {
   margin-top: 20px;
+}
+@keyframes ShowUp {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
 }

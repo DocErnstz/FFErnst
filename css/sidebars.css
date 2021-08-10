@@ -10,6 +10,7 @@
   top: 0px;
   left: 0px;
   flex-basis: 70px;
+
   background-color: grey;
 }
 
@@ -60,4 +61,12 @@
 .contactBar h1:hover {
   color: var(--myred);
   transform: translateY(-5px);
+}
+
+.emailBar,
+.contactBar {
+  animation: letterAppear 0.4s ease-in-out;
+  animation-delay: 1.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
