@@ -9,7 +9,20 @@
 body {
   --myred: rgb(255, 83, 83);
   margin: 0;
+  background-color: grey;
   padding: 0;
   height: 640px;
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 10px;
 }

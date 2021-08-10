@@ -1,5 +1,14 @@
 .navbar {
   background-color: grey;
+  position: sticky;
+  transform: translateY(0px);
+  transition: all 0.4s ease-in-out;
+  z-index: 90;
+}
+
+.shadownav {
+  box-shadow: 10px 5px 10px 10px rgb(106, 101, 101);
+  transform: translateY(-55px);
 }
 
 nav {
