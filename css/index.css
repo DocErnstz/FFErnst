@@ -11,6 +11,77 @@ body {
   box-sizing: border-box;
 }
 
+
+.block {
+  position: relative;
+}
+
+.E {
+  position: absolute;
+  top: 40px;
+}
+
+.E > div {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(41, 30, 30);
+  border-radius: 10px;
+}
+.line1 {
+  
+  animation: formLetter1 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.line2 {
+ 
+   animation: formLetter2 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.line3 {
+
+   animation: formLetter3 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.line4 {
+
+   animation: formLetter4 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes formLetter1 {
+  from {
+    transform: rotateZ(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotateZ(90deg) translate(10px, -10px);
+  }
+}
+@keyframes formLetter2 {
+  from {
+    transform: translate(0px, 0px));
+  }
+  to {
+    transform: translate(23px, -20px);
+  }
+}
+
+@keyframes formLetter3 {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(23px, 0px);
+  }
+  
+}
+@keyframes formLetter4 {
+  from {
+ transform: translate(0px, 0px);
+  }
+  to {
+     transform: translate(23px, 20px);
+  }
+}
 .loaderScreen {
   position: fixed;
   width: 100%;
@@ -33,7 +104,8 @@ body {
   width: 100px;
   height: 0px;
   position: absolute;
-  border-left: 3px solid red;
+  
+  border-left: 3px solid var(--myred);
   transform: translate(100px, 0px);
   bottom: 0px;
   animation: lineDRanim 1s ease-in-out;
@@ -43,7 +115,7 @@ body {
 
 .lineUL {
   position: absolute;
-  border-right: 3px solid red;
+  border-right: 10px solid var(--myred);
 
   width: 100px;
   height: 0px;
@@ -52,20 +124,12 @@ body {
   animation: lineULanim 1s ease-in-out;
   animation-fill-mode: forwards;
 }
-.lineUL h1 {
-  transform: translate(100px, 0px) rotateZ(-45deg);
-  color: #fff;
-  font-size: 3rem;
-  opacity: 0;
-  animation: letterAppear 1s ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 4s;
-}
+
 .lineDL {
   width: 0px;
   height: 100px;
   position: absolute;
-  border-top: 3px solid red;
+  border-top: 10px solid var(--myred);
   transform: translate(0px, 100px);
   animation: lineDLanim 1s ease-in-out;
   animation-delay: 1s;
@@ -75,7 +139,7 @@ body {
   width: 0px;
   height: 100px;
   position: absolute;
-  border-bottom: 3px solid red;
+  border-bottom: 10px solid var(--myred);
 
   transform: translate(0px, -100px);
   animation: lineURanim 1s ease-in-out;
