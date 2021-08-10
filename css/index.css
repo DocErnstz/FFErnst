@@ -1,8 +1,9 @@
 @import "navbar.css";
 @import "loader.css";
 @import "sidebars.css";
+@import "introduction.css";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap");
 * {
   font-family: "Nunito", sans-serif;
 }

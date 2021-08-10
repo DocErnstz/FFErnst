@@ -1,0 +1,33 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.introduction h3 {
+  color: var(--myred);
+}
+.introduction button {
+  width: 15%;
+  border: 2px solid var(--myred);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 15px;
+
+  color: var(--myred);
+}
+.introduction > div:nth-child(2),
+.introduction > div:nth-child(3) {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.introduction > div:nth-child(3) {
+  color: rgb(191, 179, 179);
+}
+.introduction p {
+  color: rgb(191, 179, 179);
+}
+.introduction > * {
+  margin-top: 20px;
+}
