@@ -1,0 +1,206 @@
+.block {
+  position: relative;
+}
+
+.E {
+  position: absolute;
+  top: 40px;
+}
+
+.E > div {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(41, 30, 30);
+  border-radius: 10px;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+.line1 {
+  
+  animation: formLetter1 1s ease-in-out;
+ 
+
+}
+.line2 {
+ 
+   animation: formLetter2 1s ease-in-out;
+  
+}
+.line3 {
+
+   animation: formLetter3 1s ease-in-out;
+ 
+}
+.line4 {
+
+   animation: formLetter4 1s ease-in-out;
+
+}
+
+@keyframes formLetter1 {
+  from {
+    opacity: 0;
+    transform: rotateZ(0deg) translate(0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateZ(90deg) translate(10px, -10px);
+  }
+}
+@keyframes formLetter2 {
+  from {
+    opacity: 0;
+    transform: translate(0px, 0px));
+  }
+  to {
+    opacity: 1;
+    transform: translate(23px, -20px);
+  }
+}
+
+@keyframes formLetter3 {
+  from {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(23px, 0px);
+  }
+  
+}
+@keyframes formLetter4 {
+  from {
+    opacity: 0;
+ transform: translate(0px, 0px);
+  }
+  to {
+    opacity: 1;
+     transform: translate(23px, 20px);
+  }
+}
+.loaderScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  animation: fadeAway 1s ease-in-out;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.loadSquare {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(45deg);
+}
+
+.lineDR {
+  width: 100px;
+  height: 0px;
+  position: absolute;
+  
+  border-left: 3px solid var(--myred);
+  transform: translate(100px, 0px);
+  bottom: 0px;
+  animation: lineDRanim 1s ease-in-out;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.lineUL {
+  position: absolute;
+  border-right: 10px solid var(--myred);
+
+  width: 100px;
+  height: 0px;
+
+  transform: translate(-100px, 0px);
+  animation: lineULanim 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lineDL {
+  width: 0px;
+  height: 100px;
+  position: absolute;
+  border-top: 10px solid var(--myred);
+  transform: translate(0px, 100px);
+  animation: lineDLanim 1s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.lineUR {
+  width: 0px;
+  height: 100px;
+  position: absolute;
+  border-bottom: 10px solid var(--myred);
+
+  transform: translate(0px, -100px);
+  animation: lineURanim 1s ease-in-out;
+  animation-delay: 3s;
+
+  right: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lineULanim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
+}
+@keyframes lineDLanim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 103px;
+  }
+}
+
+@keyframes lineDRanim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+@keyframes lineURanim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes letterAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAway {
+  from {
+    opacity: 1;
+    width: 100%;
+  }
+  to{
+    opacity: 0;
+    width: 0%;
+  }
+}
