@@ -103,11 +103,13 @@ body {
   align-items: center;
   justify-content: center;
   background-color: grey;
+  animation: fadeAway 1s ease-in-out;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
 .loadSquare {
   position: relative;
-
   width: 100px;
   height: 100px;
   transform: rotateZ(45deg);
@@ -203,5 +205,14 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeAway {
+  from {
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
   }
 }
