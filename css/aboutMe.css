@@ -1,0 +1,62 @@
+#aboutMe .container {
+  display: flex;
+  padding: 75px;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.title > div:first-child {
+  color: var(--myred);
+  margin-top: auto;
+}
+.title > div:nth-child(2) {
+  color: white;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.title > div {
+  margin-right: 10px;
+  font-size: 30px;
+}
+.title .lineH {
+  width: 200px;
+  height: 1px;
+  background-color: white;
+}
+.techResume {
+  flex-basis: 450px;
+}
+.techResume > *:not(.title) {
+  color: rgb(184, 157, 157);
+}
+.profile {
+  position: relative;
+  height: 400px;
+  flex: 1 0 auto;
+  --left: 25px;
+}
+.profileImg,
+.profileMock {
+  height: 225px;
+  width: 225px;
+}
+.profileImg {
+  position: absolute;
+  background-color: var(--myred);
+  border-radius: 5px;
+  top: 90px;
+  left: calc(50px - var(--left));
+  z-index: 90;
+}
+.profileMock {
+  position: absolute;
+  left: calc(70px - var(--left));
+  top: 100px;
+  border: 3px solid var(--myred);
+  border-radius: 5px;
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
