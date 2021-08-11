@@ -1,0 +1,62 @@
+#Projects .project {
+  display: flex;
+  position: relative;
+}
+
+#Projects .title {
+  width: 750px;
+  margin: 0px auto;
+}
+
+#Projects .img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background: tomato;
+  margin: 20px 70px;
+  box-shadow: 1px 1px 10px 1px;
+}
+
+#Projects .ProjectInfo {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  top: 20px;
+  left: 400px;
+  flex-direction: column;
+}
+.ProjectInfo .names {
+  align-self: flex-end;
+}
+.names > div:first-child {
+  color: var(--myred);
+}
+.names > div:nth-child(2) {
+  color: white;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.description {
+  background: rgb(35, 34, 34);
+  border-radius: 5px;
+  padding: 5px 0px;
+  padding-left: 30px;
+  padding-right: 10px;
+  box-shadow: 1px 1px 10px 1px;
+}
+.ProjectInfo .tech {
+  display: flex;
+  justify-content: flex-end;
+}
+.ProjectInfo .tech > div {
+  margin: 10px;
+}
+.ProjectInfo .review {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ProjectInfo .review > i {
+  margin: 10px;
+}
