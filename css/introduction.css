@@ -1,7 +1,7 @@
 .introduction {
   display: flex;
   flex-direction: column;
-  margin: 100px;
+  margin: 1vw;
 }
 .introduction h3 {
   color: var(--myred);
@@ -12,7 +12,7 @@
 }
 
 .introduction button {
-  width: 15%;
+  width: 150px;
   border: 2px solid var(--myred);
   background-color: transparent;
   border-radius: 5px;
@@ -24,16 +24,13 @@
 
   color: var(--myred);
   transition: background-color 0.4s ease-in-out;
-}
 
-.introduction button:hover {
   background-color: rgb(193, 170, 170);
 }
 
 .introduction > div:nth-child(2),
 .introduction > div:nth-child(3) {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 5vw;
   color: #fff;
   opacity: 0;
   font-family: "Atkinson Hyperlegible", sans-serif;
