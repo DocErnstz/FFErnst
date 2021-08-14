@@ -30,6 +30,14 @@
 .techResume > *:not(.title) {
   color: rgb(184, 157, 157);
 }
+
+.techResume > p {
+  width: 100%;
+}
+.techResume .tech {
+  width: 100%;
+}
+
 .profile {
   position: relative;
   height: 400px;
@@ -38,8 +46,13 @@
 }
 .profileImg,
 .profileMock {
-  height: 270px;
-  width: 270px;
+  width: 70%;
+}
+.profileImg:after,
+.profileMock:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 .profileImg {
   position: absolute;
@@ -65,6 +78,6 @@
   transform: translate(-10px, -10px);
 }
 .tech {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
