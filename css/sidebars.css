@@ -4,12 +4,8 @@
   overflow: auto;
 }
 
-.responsive {
-  display: none;
-}
-.mainBar .container {
-  width: 80%;
-  margin: 0px auto;
+.mainBar > .container {
+  width: 100%;
 }
 .mainBar > div:first-child {
   position: fixed;
@@ -21,8 +17,7 @@
 }
 
 .mainBar > div:nth-child(2) {
-  flex: 1 0 auto;
-  height: 1000px;
+  min-height: 1000px;
   background-color: grey;
 }
 .mainBar > div:nth-child(3) {
@@ -75,9 +70,10 @@
   animation-delay: 1.4s;
   opacity: 0;
   animation-fill-mode: forwards;
+  z-index: 10;
 }
 
-@media (max-width: 753px) {
+@media (max-width: 917px) {
   .mainBar .emailBar,
   .contactBar {
     display: none;

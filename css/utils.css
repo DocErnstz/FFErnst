@@ -1,0 +1,4 @@
+.showUp {
+  animation: ShowUp 0.4s ease-in-out;
+  animation-fill-mode: forwards;
+}
