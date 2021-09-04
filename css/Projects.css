@@ -16,6 +16,15 @@
 
   margin-bottom: 100px;
 }
+
+#Projects .info > .icons a {
+  transition: all 0.4s ease-in-out;
+}
+#Projects .info > .icons a:hover {
+  transform: rotateZ(360deg);
+  color: black;
+}
+
 #Projects > ul {
   padding: 0px;
   margin: 0px;
@@ -27,7 +36,7 @@
   margin-bottom: 10px;
 }
 
-ul.tech li {
+#Projects ul.tech li {
   margin-left: 20px;
   margin-bottom: 5px;
 }
@@ -37,6 +46,12 @@ ul.tech li {
   grid-column: 7 / -1;
   text-align: right;
   z-index: 2;
+}
+#Projects li .projectImg img {
+  height: 100%;
+  width: 100%;
+      object-fit: contain;
+
 }
 #Projects li .projectImg {
   border-radius: 10px;
@@ -55,16 +70,44 @@ ul.tech li {
   width: 40vw;
   height: 25vw;
   background: var(--myred);
-  box-shadow: 0 10px 30px -15px 10px;
+  box-shadow: 0 0 20px;
   border-radius: 5px;
 }
+.projectImg > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#Project1 .projectImg > div > a > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Project01.png");
+}
+#Project2 .projectImg > div > a > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Project2.png");
+}
+
+#Project3 .projectImg > div > a > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Project3.png");
+}
+
+#Project4 .projectImg > div > a > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Project4.png");
+}
+
 
 #Projects .info .description {
   background: rgb(94, 97, 116);
   border-radius: 10px;
   color: #fff;
   padding: 25px;
-  box-shadow: 0 10px 30px -15px 10px;
+  box-shadow: 0 0 20px black;
 }
 .description p {
   margin: 0px;
@@ -160,15 +203,21 @@ ul.tech li {
     margin: 50px;
   }
 
-  #Projects .info .description {
+  #Projects > .info > .description {
     background: none;
     text-align: left;
+    box-shadow: 0px;
+
     padding: 0px;
   }
   #Projects li:nth-of-type(2n + 1) .info > ul.tech {
     justify-content: flex-start;
   }
-  ul.tech > li {
+  #Projects li:nth-of-type(2n + 1) ul.tech li {
+    margin: 0px;
+    margin-right: 10px;
+  }
+  #Projects li:nth-of-type(2n) > ul.tech > li {
     margin: 0px;
     margin-right: 10px;
   }
