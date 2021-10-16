@@ -1,5 +1,5 @@
 #AboutMe {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0px auto;
   padding-top: 100px;
 
@@ -33,7 +33,7 @@
 }
 .Resume {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr;
   grid-gap: 30px;
 }
 .profile {

@@ -33,7 +33,7 @@ var scrollbar = new $.ScrollBar(
     2650: "#titleMore2",
     3150: "line 1",
     3450: "line 2",
-    3850: "line 3",
+    3550: "line 3",
   },
   []
 );

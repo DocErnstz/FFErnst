@@ -43,8 +43,13 @@
 }
 .emailBar > * {
   margin-top: 30px;
+  
 }
-
+.emailBar h2{
+  writing-mode: vertical-rl;
+  font-size: 1rem;
+  color: #fff;
+}
 .emailBar > i {
   color: honeydew;
   transition: color 0.1s ease-in-out, transform 0.2s ease-in-out;
